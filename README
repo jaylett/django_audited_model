@@ -27,11 +27,6 @@ Similarly, a second field to record the modification time may be helpful:
 
     modified_at = models.DateTimeField(null=False, blank=False, auto_now=True)
 
-Admin
-=====
-
-You may prefer to exclude the above fields from the admin interface, for clarity.
-
 "Loose" auditing
 ================
 
@@ -41,6 +36,11 @@ Convenience abstract models
 ===========================
 
 To avoid typing the field definitions in, inherit from AuditedModel or LooselyAuditedModel as required. These contain all four fields above.
+
+Admin
+=====
+
+You may prefer to exclude the above fields from the admin interface, for clarity. This is *not* set up automatically by the abstract models; however django_audited_model.models.exclude is a list of these fields.
 
 Use in the shell and from management commands
 =============================================
