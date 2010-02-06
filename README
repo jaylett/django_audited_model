@@ -71,6 +71,6 @@ This has been extracted from running code, but not heavily tested as yet.
 
 In the present version, for compatibility reasons, the middleware will handle created_at and modified_at itself, although this will then be overridden if auto_now_add or auto_now respectively are True.
 
-The model shortcuts were originally written by Aaron Sokoloski. The whole thing was created at a <http://devfort.com/>.
+The model shortcuts were originally written by Aaron Sokoloski, with some bugfixes by Andrew Godwin. The whole thing has been created and maintained at <http://devfort.com/>.
 
 James Aylett <http://tartarus.org/james/computers/django/>
